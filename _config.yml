@@ -1,0 +1,6 @@
+title: VPDWEB
+permalink: /:title.html/
+collections:
+    - portfolio
+    - testimonials
+    - team

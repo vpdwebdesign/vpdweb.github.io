@@ -1,0 +1,43 @@
+---
+layout: default
+title: Portfolio
+order: 4
+---
+<section id="vpdweb-hero" class="no-js-fullheight" style="background-image: url(../assets/images/services_bg.jpg);" data-next="yes">
+    <div class="vpdweb-overlay"></div>
+    <div class="container">
+        <div class="vpdweb-intro no-js-fullheight">
+            <div class="vpdweb-intro-text">
+                <div class="vpdweb-center-position">
+                    <h2>Portfolio</h2>
+                    <h3>Welcome to our portfolio section. This is where we showcase samples of our latest projects.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vpdweb-learn-more ">
+        <a href="#" class="scroll-btn">
+            <span class="arrow"><i class="icon-chevron-down"></i></span>
+        </a>
+    </div>
+</section>
+
+<section id="vpdweb-portfolio">
+    <div class="container">
+        <div class="row">
+            <ul id="vpdweb-folio-grid" class="vpdweb-folio-grid">
+                {% assign sorted_portfolio = site.portfolio | sort: "order" | reverse %}
+                {% for portfolio_item in sorted_portfolio %}
+                <li>
+                    <a href="#" data-largesrc="{{ portfolio_item.image_path }}" data-title="{{ portfolio_item.title }}" data-description="{{ portfolio_item.content | remove: '<p>' | remove: '</p>' }}" data-tools="{{ portfolio_item.tools_used }}"><img  src="{{ portfolio_item.thumb_image_path }}" alt="{{ portfolio_item.alt_text }}"></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="vpdweb-btn-action text-center"><a href="/contact/" class="btn btn-primary btn-cta">Let's work together</a></div>
+            </div>
+        </div>
+    </div>
+</section>
