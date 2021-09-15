@@ -1,7 +1,7 @@
 ---
-name: Brian Barasa
-image_path: /assets/images/team/bb.jpg
-role: Graphics & UX/UI Designer / Marketing Manager
+name: Steve Tedd
+image_path: /assets/images/team/steve_tedd.jpg
+role: Marketing Manager
 email: brianbarasa001@gmail.com
 rank: 2
 ---
