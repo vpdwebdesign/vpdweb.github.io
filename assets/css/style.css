@@ -730,7 +730,7 @@ h6 {
   display: block;
   width: 100%;
   position: relative;
-  background: #e8e8e8;
+  background: #333;
   overflow: hidden;
   z-index: 9;
   margin-bottom: 30px;
@@ -770,7 +770,7 @@ h6 {
   font-size: 18px;
   font-weight: bold;
   margin: 0 0 10px 0;
-  color: #484c50;
+  color: #777;
 }
 
 #vpdweb-projects .vpdweb-project-item .vpdweb-text span {
@@ -810,7 +810,7 @@ h6 {
 
 #vpdweb-projects .vpdweb-project-item:hover p,
 #vpdweb-projects .vpdweb-project-item:focus p {
-  color: #484c50;
+  color: #ddd;
 }
 
 #vpdweb-portfolio {
